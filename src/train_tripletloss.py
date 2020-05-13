@@ -324,7 +324,7 @@ def sample_people(dataset, people_per_batch, images_per_person):
     sampled_class_indices = []
     # Sample images from these classes until we have enough
     while len(image_paths)<nrof_images:
-        class_index = class_indices[i]
+        class_index = class_indices[i % nrof_classes]
         nrof_images_in_class = len(dataset[class_index])
         image_indices = np.arange(nrof_images_in_class)
         np.random.shuffle(image_indices)
