@@ -31,6 +31,7 @@ Required working directory :
 import pandas as pd
 import os
 import cv2
+import glob
 from tqdm import tqdm
 import argparse
 
@@ -64,7 +65,8 @@ def main():
         if not os.path.exists(stacked_path):
             os.mkdir(stacked_path)
         img = cv2.imread(os.path.join(data_dir, str(i)) + image_ext)
-        filename = classes[i-1] + '_' + str(i).zfill(4) + image_ext
+        img_id = len(glob.glob(stacked_path + '/*')) + 1
+        filename = classes[i-1] + '_' + str(img_id).zfill(4) + image_ext
         cv2.imwrite(os.path.join(stacked_path, filename), img)
 
 if __name__ == "__main__":
