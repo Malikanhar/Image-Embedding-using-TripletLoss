@@ -79,7 +79,7 @@ def freeze_graph_def(sess, input_graph_def, output_node_names):
     # Get the list of important nodes
     whitelist_names = []
     for node in input_graph_def.node:
-        if (node.name.startswith('InceptionResnet') or node.name.startswith('embeddings') or 
+        if (node.name.startswith('squeezenet') or node.name.startswith('embeddings') or 
                 node.name.startswith('image_batch') or node.name.startswith('label_batch') or
                 node.name.startswith('phase_train') or node.name.startswith('Logits')):
             whitelist_names.append(node.name)
