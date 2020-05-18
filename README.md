@@ -73,3 +73,23 @@ python src/freeze_graph.py
 </pre>
 
 where the `checkpoint/` is a directory containing the metagraph (.meta) file and the checkpoint (ckpt) file containing model parameters, and `frozen_graph.pb` is the filename for the exported graphdef protobuf (.pb).
+
+### Compare Two Images
+Since we have a model to do an image embedding, so we can use it to calculate the similarity of two images. Run the following command to compare two images
+<pre>
+python src/compare.py
+    --frozen_graph frozen_graph.pb
+    --image1 image1.jpg
+    --image2 image2.jpg
+</pre>
+
+### Download Pre-trained Model 
+Download pretrained image embedding model [here](https://drive.google.com/open?id=16esNWPE7trFQJbUrWppm-aH2y3chFcCC)
+
+## Demo
+The project demo can be found [here](https://colab.research.google.com/drive/1ZaHLilDE1ydl1gj5ncaDUSfhhFD9O1SR)
+
+## Result
+![Result 1](https://github.com/Malikanhar/Image-Embedding-using-TripletLoss/raw/master/assets/result1.PNG)
+![Result 2](https://github.com/Malikanhar/Image-Embedding-using-TripletLoss/raw/master/assets/result2.PNG)
+![Result 3](https://github.com/Malikanhar/Image-Embedding-using-TripletLoss/raw/master/assets/result3.PNG)
