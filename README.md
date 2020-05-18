@@ -93,3 +93,6 @@ The project demo can be found [here](https://colab.research.google.com/drive/1Za
 ![Result 1](https://github.com/Malikanhar/Image-Embedding-using-TripletLoss/raw/master/assets/result1.PNG)
 ![Result 2](https://github.com/Malikanhar/Image-Embedding-using-TripletLoss/raw/master/assets/result2.PNG)
 ![Result 3](https://github.com/Malikanhar/Image-Embedding-using-TripletLoss/raw/master/assets/result3.PNG)
+
+## Reference
+[1] F. Schroff and J. Philbin, “FaceNet: A Unified Embedding for Face Recognition and Clustering,” in Proceedings of the IEEE conference on computer vision and pattern recognition (CVPR), 2015, pp. 815–823. [arxiv](https://arxiv.org/pdf/1503.03832.pdf)
