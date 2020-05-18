@@ -96,3 +96,6 @@ The project demo can be found [here](https://colab.research.google.com/drive/1Za
 
 ## Reference
 [1] F. Schroff and J. Philbin, “FaceNet: A Unified Embedding for Face Recognition and Clustering,” in Proceedings of the IEEE conference on computer vision and pattern recognition (CVPR), 2015, pp. 815–823. [arxiv](https://arxiv.org/pdf/1503.03832.pdf)
+
+## Original Repo
+https://github.com/davidsandberg/facenet
